@@ -4,7 +4,7 @@
   "isDeleted": false,
   "rev": "6-e70d372256cb3516aba71feddc666ae7",
   "description": "Converts a list of peptides into a list of kinases.",
-  "name": "UKA_app_updated",
+  "name": "UKA_app",
   "createdBy": "dschuller",
   "acl": {
     "kind": "Acl",
