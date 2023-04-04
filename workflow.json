@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "5fdacf2e254f508d0bd669ac03f1a0c5",
   "isDeleted": false,
-  "rev": "6-e70d372256cb3516aba71feddc666ae7",
+  "rev": "8-03206709895a15a86062607efdd9e689",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_app",
   "createdBy": "dschuller",
@@ -17,12 +17,12 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-03-15T10:18:58.594177Z"
+    "value": "2023-04-04T14:11:25.439943Z"
   },
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/pamgene/UKA_app"
+      "uri": "https://github.com/tercen/simple_workflow_tmpl"
     }
   ],
   "tags": [],
@@ -55,7 +55,7 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/pamgene/UKA_app"
+    "uri": "https://github.com/tercen/UKA_app"
   },
   "version": "0.1.4",
   "authors": [],
@@ -386,8 +386,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.1.0",
-            "operatorId": "5fdacf2e254f508d0bd669ac03f1b822",
+            "version": "0.1.1",
+            "operatorId": "e50efaa75416f1b61950d47b86314fe6",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -403,7 +403,7 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/pamgene/upstream_kinase_analysis_shiny_operator"
+              "uri": "https://github.com/pamgene/uka_shiny_operator"
             }
           },
           "environment": [
