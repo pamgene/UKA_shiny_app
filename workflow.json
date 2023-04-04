@@ -22,7 +22,7 @@
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/tercen/simple_workflow_tmpl"
+      "uri": "https://github.com/pamgene/UKA_app"
     }
   ],
   "tags": [],
@@ -55,7 +55,7 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/UKA_app"
+    "uri": "https://github.com/pamgene/UKA_app"
   },
   "version": "0.1.4",
   "authors": [],
