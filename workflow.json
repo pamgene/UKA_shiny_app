@@ -398,7 +398,7 @@
               {
                 "kind": "PropertyValue",
                 "name": "Lock_kinase_family",
-                "value": "Yes"
+                "value": "No"
               }
             ],
             "url": {
