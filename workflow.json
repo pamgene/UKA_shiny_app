@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "5fdacf2e254f508d0bd669ac03f1a0c5",
   "isDeleted": false,
-  "rev": "8-03206709895a15a86062607efdd9e689",
+  "rev": "10-a1e2a9dcc7d5c808c6381169c22c6c83",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-04-04T14:11:25.439943Z"
+    "value": "2023-06-09T07:56:11.943387Z"
   },
   "urls": [
     {
@@ -320,7 +320,8 @@
                   }
                 }
               },
-              "taskId": ""
+              "taskId": "",
+              "preprocessors": []
             }
           ]
         },
@@ -386,8 +387,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.1.1",
-            "operatorId": "e50efaa75416f1b61950d47b86314fe6",
+            "version": "0.1.2",
+            "operatorId": "51b16454f291d74afb94f12ea54f28c8",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -417,7 +418,10 @@
               "key": "ram",
               "value": "0"
             }
-          ]
+          ],
+          "operatorModel": {
+            "kind": "OperatorModel"
+          }
         },
         "rowTable": {
           "kind": "CrosstabTable",
@@ -454,7 +458,8 @@
       "computedRelation": {
         "kind": "Relation",
         "id": "3c55124d-b836-45e1-a4cd-01e7e595901a"
-      }
+      },
+      "parentDataStepId": ""
     },
     {
       "kind": "WizardStep",
@@ -624,7 +629,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -23.0,
-    "y": 111.0
+    "x": -3.0,
+    "y": 233.0
   }
 }
