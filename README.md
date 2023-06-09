@@ -1,34 +1,33 @@
-# UKA_app
+# UKA app
 
 ##### Description
 
-`UKA_app` is an application that allows user to perform Upstream Kinase Analysis (UKA) for tyrosine or serine threonine kinases. The UKA algorithm is used to predict differential kinase activity in a Test Condition compared to Control. The UKA uses knowledge from publicly available databases of kinase-substrate relationships. 
+The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyrosine or serine threonine kinases. The UKA algorithm predicts differential kinase activity in a Test Condition compared to Control. The UKA uses knowledge from publicly available databases of kinase-substrate relationships. 
 
 ##### Details
 
-* This application performs a two group comparison between kinase activity (Here use Log2 Signals of the 2 groups) or kinase inhibition profiles (Here use the Log2 Fold Change/ LFC/ LogRatio/ Delta values) of each sample. Make sure the "control" LFC value is removed, and the LFC of the 2 Groups/ Classes are included. 
-
-* In order to visualise the correct effect DIRECTION, "Control" (=denominator in the comparison) should be of a lower alphabet or number. (Numeric characters precede alphabets.)
+* This application performs a two group comparison between kinase activity (use Log2 Signals of the 2 groups) or kinase inhibition profiles (here use the Log2 Fold Change, LFC values of each sample and remove the "control" LFC value). 
 
 * Significant peptides should not be pre-selected for input. (Pre-selection should only be based on general QC considerations, e.g. removing peptides with low or absent signals.)
 
+* The denominator in the comparison is the group with an initial letter that is ahead in the alphabet, or a lower number. (Numeric characters precede alphabets.)
+
 Input projection|.
 ---|---
-`y-axis`        | numeric, single y value per cell
+`y-axis`        | numeric, single signal value per cell
 `row`           | peptides
-`column`| samples
+`column`| group and samples (e.g. Test Condition and Sample name)
 
 Input parameters|.
 ---|---
-`Kinase_family`      | Type of kinase family, either PTK or STK. Default is PTK.
-`Lock_kinase_family` | If Yes, kinase family cannot be selected when running. Default is Yes.
+`Kinase_family`      | Type of kinase family, either PTK or STK.
+`Lock_kinase_family` | If Yes, kinase family cannot be selected when running.
 
-The input data is the [UKA dataset](https://tercen.com/r/ebd643c3119c715cacdef627bb88a5a7)
+This workflow has 1 operator:
 
-This workflow has 1 operators:
+* [Upstream Kinase Analysis Shiny Operator](https://github.com/pamgene/upstream_kinase_analysis_shiny_operator)
 
-* [Upstream Kinase Analysis Shiny Operator](https://github.com/tercen/upstream_kinase_analysis_shiny_operator)
+More on UKA:  
+https://pamcloud.pamgene.com/wiki/Wiki.jsp;jsessionid=C05336E7DB607B2FAB61F9479C1DD2C8?page=Background%20to%20the%20Upstream%20Kinase%20Analysis%20PamApp&TARGET=https%3A%2F%2Fpamcloud.pamgene.com%2Fwiki%2FWiki.jsp%3Bjsessionid%3DC05336E7DB607B2FAB61F9479C1DD2C8%3Fpage%3DBackground%2520to%2520the%2520Upstream%2520Kinase%2520Analysis%2520PamApp&SAMLart=AAFSsPYAkNKN6Mb0Q6Li8D8gawrtLLyj2rv3yxkxmhvECwuISY44YcAl
 
-This workflow has 1 view:
-* Upstream Kinases Analysis
 
