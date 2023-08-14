@@ -1,8 +1,8 @@
 {
   "kind": "Workflow",
-  "id": "5fdacf2e254f508d0bd669ac03f1a0c5",
+  "id": "387c06aa5634942391a5403a0730be62",
   "isDeleted": false,
-  "rev": "10-a1e2a9dcc7d5c808c6381169c22c6c83",
+  "rev": "5-61d1cc06cf08b19585e9ff3c02478820",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_app",
   "createdBy": "dschuller",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2023-03-14T13:25:42.157411Z"
+    "value": "2023-08-11T14:34:17.209134Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-06-09T07:56:11.943387Z"
+    "value": "2023-08-14T07:50:11.392736Z"
   },
   "urls": [
     {
@@ -27,11 +27,6 @@
   ],
   "tags": [],
   "meta": [
-    {
-      "kind": "Pair",
-      "key": "workflow.app",
-      "value": ""
-    },
     {
       "kind": "Pair",
       "key": "copyOf",
@@ -55,12 +50,12 @@
   ],
   "url": {
     "kind": "Url",
-    "uri": "https://github.com/tercen/UKA_app"
+    "uri": "https://github.com/pamgene/UKA_app"
   },
-  "version": "0.1.4",
+  "version": "0.2.5",
   "authors": [],
   "isPublic": false,
-  "projectId": "5fdacf2e254f508d0bd669ac039f912e",
+  "projectId": "e53e831c80cb06b8ebb3828de4b83f98",
   "folderId": "",
   "links": [
     {
@@ -71,13 +66,13 @@
     },
     {
       "kind": "Link",
-      "id": "c7b80644-7c87-43a0-8817-54c76972a04e",
+      "id": "0832a918-dea2-4486-8b14-952a478454e0",
       "inputId": "2ca378e5-1717-4952-ad2d-caec64d253c8-i-0",
       "outputId": "b22d817f-77b6-4f8f-b396-d86e4af410c5-o-0"
     },
     {
       "kind": "Link",
-      "id": "b721e0f7-9189-4ad4-abba-ef2ec4379edb",
+      "id": "98fd9345-f83e-4185-aba7-3b95ae67e131",
       "inputId": "b22d817f-77b6-4f8f-b396-d86e4af410c5-i-0",
       "outputId": "0d0969f7-d27d-4bf0-a433-69471e97dd4e-o-0"
     }
@@ -226,13 +221,7 @@
               },
               "colors": {
                 "kind": "Colors",
-                "factors": [
-                  {
-                    "kind": "Factor",
-                    "name": "Group",
-                    "type": "string"
-                  }
-                ],
+                "factors": [],
                 "palette": {
                   "kind": "CategoryPalette",
                   "backcolor": 0,
@@ -387,8 +376,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.1.2",
-            "operatorId": "51b16454f291d74afb94f12ea54f28c8",
+            "version": "0.2.0",
+            "operatorId": "387c06aa5634942391a5403a071c7064",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -432,15 +421,15 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "ID",
+                "name": "Variable",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 102.0,
-                  "y": 0.0
+                  "x": 80.0,
+                  "y": 30.0
                 },
                 "topLeft": {
                   "kind": "Point",
@@ -451,13 +440,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 148
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3c55124d-b836-45e1-a4cd-01e7e595901a"
+        "id": "8894706d-e0ef-458f-9324-eaa52c45520d"
       },
       "parentDataStepId": ""
     },
@@ -491,7 +480,7 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 627.6309106445315,
+          "x": 626.6309106445315,
           "y": 25.5
         }
       },
@@ -513,58 +502,8 @@
             "name": "Measurement",
             "type": "double",
             "isSingle": true,
-            "description": "Select the values to use in the computation.\n\nExample:\n* log transform of S100",
+            "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
             "factorName": "Quantitation Type",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "ID",
-            "type": "string",
-            "isSingle": false,
-            "description": "Select the peptide identifier.\n\nExample:\n* ID",
-            "factorName": "Peptide",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "ID",
-                "type": "string"
-              }
-            ],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "Group",
-            "type": "string",
-            "isSingle": false,
-            "description": "Select the grouping factor for the comparison.\n\nExample:\n* Treatment off chip",
-            "factorName": "Treatment",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "Observation",
-            "type": "string",
-            "isSingle": false,
-            "description": "Select (a) factor(s) that identify single observations in the analysis.\n\nExample:\n* Cell line\n* Subject \n* Barcode and Array",
-            "factorName": "Individual observation",
-            "factors": [],
-            "isRequired": true
-          }
-        ],
-        "filters": [],
-        "steps": [],
-        "defaultFactors": [
-          {
-            "kind": "MappingFactor",
-            "name": "Measurement",
-            "type": "double",
-            "isSingle": true,
-            "description": "",
-            "factorName": "Measurement",
             "factors": [
               {
                 "kind": "Factor",
@@ -576,15 +515,15 @@
           },
           {
             "kind": "MappingFactor",
-            "name": "ID",
+            "name": "Variable",
             "type": "string",
             "isSingle": false,
             "description": "",
-            "factorName": "ID",
+            "factorName": "Variable",
             "factors": [
               {
                 "kind": "Factor",
-                "name": "ID",
+                "name": "Variable",
                 "type": "string"
               }
             ],
@@ -595,8 +534,8 @@
             "name": "Group",
             "type": "string",
             "isSingle": false,
-            "description": "",
-            "factorName": "Group",
+            "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
+            "factorName": "Test Condition",
             "factors": [
               {
                 "kind": "Factor",
@@ -604,15 +543,83 @@
                 "type": "string"
               }
             ],
-            "isRequired": true
+            "isRequired": false
           },
           {
             "kind": "MappingFactor",
             "name": "Observation",
             "type": "string",
             "isSingle": false,
+            "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n* Sample Name",
+            "factorName": "Single Data Value per Cell",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Observation",
+                "type": "string"
+              }
+            ],
+            "isRequired": true
+          }
+        ],
+        "filters": [],
+        "steps": [],
+        "defaultFactors": [
+          {
+            "kind": "MappingFactor",
+            "name": "Measurement",
+            "type": "double",
+            "isSingle": true,
+            "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
+            "factorName": "Quantitation Type",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Measurement",
+                "type": "double"
+              }
+            ],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Variable",
+            "type": "string",
+            "isSingle": false,
             "description": "",
-            "factorName": "Observation",
+            "factorName": "Variable",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Variable",
+                "type": "string"
+              }
+            ],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Group",
+            "type": "string",
+            "isSingle": false,
+            "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
+            "factorName": "Test Condition",
+            "factors": [
+              {
+                "kind": "Factor",
+                "name": "Group",
+                "type": "string"
+              }
+            ],
+            "isRequired": false
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Observation",
+            "type": "string",
+            "isSingle": false,
+            "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n* Sample Name",
+            "factorName": "Single Data Value per Cell",
             "factors": [
               {
                 "kind": "Factor",
@@ -629,7 +636,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -3.0,
+    "x": -2.0,
     "y": 233.0
   }
 }
