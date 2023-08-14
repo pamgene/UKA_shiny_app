@@ -6,7 +6,7 @@ The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyro
 
 ##### Details
 
-* This application performs a two group comparison between kinase activity (use Log2 Signals of the 2 groups) or kinase inhibition profiles (here use the Log2 Fold Change, LFC values of each sample and remove the "control" LFC value). 
+* Use the Log2 Signals of the 2 groups.
 
 * Significant peptides should not be pre-selected for input. (Pre-selection should only be based on general QC considerations, e.g. removing peptides with low or absent signals.)
 
@@ -17,6 +17,8 @@ Input projection|.
 `y-axis`        | numeric, single signal value per cell
 `row`           | peptides
 `column`| group and samples (e.g. Test Condition and Sample name)
+`color`| group (e.g. Test Condition)
+
 
 Input parameters|.
 ---|---
