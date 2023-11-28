@@ -4,6 +4,11 @@
 
 The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyrosine or serine threonine kinases. The UKA algorithm predicts differential kinase activity in a Test Condition compared to Control. The UKA uses knowledge from publicly available databases of kinase-substrate relationships. 
 
+#### Versions and UKA database
+* Version 0.2.8 and below uses the UKA-2022 db
+* Version 0.3.1 and above uses the UKA-2023 db
+
+
 ##### Details
 
 * Use the Log2 Signals of the 2 groups.

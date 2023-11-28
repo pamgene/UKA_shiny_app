@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "387c06aa5634942391a5403a0730be62",
   "isDeleted": false,
-  "rev": "6-79dd7a5a27e659fc0050b27c26e5c04d",
+  "rev": "8-cfc94b056308393a247cc2610afbbbf1",
   "description": "Converts a list of peptides into a list of kinases.",
   "name": "UKA_app",
   "createdBy": "dschuller",
@@ -17,12 +17,12 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-08-14T08:09:52.311973Z"
+    "value": "2023-11-28T11:10:48.190736Z"
   },
   "urls": [
     {
       "kind": "Url",
-      "uri": "https://github.com/pamgene/UKA_app"
+      "uri": "https://github.com/tercen/simple_workflow_tmpl"
     }
   ],
   "tags": [],
@@ -190,8 +190,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 624.4025781250002,
-          "y": 117.5
+          "x": 625.4025781250002,
+          "y": 118.5
         }
       },
       "state": {
@@ -256,8 +256,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -290,8 +289,7 @@
                 },
                 "axisSettings": {
                   "kind": "AxisSettings",
-                  "properties": [],
-                  "propertyValues": []
+                  "meta": []
                 },
                 "graphicalFactor": {
                   "kind": "GraphicalFactor",
@@ -369,7 +367,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 6
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -382,8 +380,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Upstream Kinase Analysis",
-            "version": "0.2.0",
-            "operatorId": "387c06aa5634942391a5403a071c7064",
+            "version": "0.3.1",
+            "operatorId": "e3d98495ccd1bc1ddde3430a4d2e873c",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
@@ -446,7 +444,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 173
+          "nRows": 1
         },
         "taskId": ""
       },
