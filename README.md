@@ -6,7 +6,7 @@ The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyro
 
 #### Versions and UKA database
 * Version 0.2.8 and below uses the UKA-2022 db
-* Version 0.3.1 and above uses the UKA-2023 db
+* Version 0.3.0 and above uses the UKA-2023 db
 
 
 ##### Details
