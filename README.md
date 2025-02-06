@@ -9,6 +9,7 @@ The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyro
 * Version 0.3.0 uses the UKA-2023 db (contains Array Layouts 86312, 86402, 86412, 87102). 
 	* Version 0.3.1: scoreplot Kinase name colors fixed
 * Version 0.4.0: uses UKA db 2024 (contains Array Layouts 86312, 86402, 86412, 87102, 87202)
+	* Version 0.4.1: bugfix in UKA db: missing sequences are now included (MK07_212_224, JAK1_1027_1039, DCX_67_79)
 
 
 ##### Details
