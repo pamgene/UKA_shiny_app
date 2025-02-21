@@ -4,7 +4,7 @@
  "isDeleted": false,
  "rev": "",
  "description": "Converts a list of peptides into a list of kinases.",
- "name": "UKA_app",
+ "name": "UKA_shiny_app",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -44,7 +44,7 @@
  ],
  "url": {
   "kind": "Url",
-  "uri": "https://github.com/pamgene/UKA_app"
+  "uri": "https://github.com/pamgene/UKA_shiny_app"
  },
  "version": "0.2.5",
  "isPublic": false,
