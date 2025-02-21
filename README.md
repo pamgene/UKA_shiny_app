@@ -1,8 +1,9 @@
-# UKA app
+# UKA shiny app
 
 ##### Description
 
-The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyrosine or serine threonine kinases. The UKA algorithm predicts differential kinase activity in a Test Condition compared to Control. The UKA uses knowledge from publicly available databases of kinase-substrate relationships. 
+The `UKA_shiny_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyrosine or serine threonine kinases. 
+The UKA algorithm predicts differential kinase activity in a Test Condition compared to Control. It uses knowledge from publicly available databases of kinase-substrate relationships. 
 
 #### Versions and UKA database
 * Version 0.2.8 and below uses the UKA-2022 db
@@ -10,11 +11,11 @@ The `UKA_app` allows the user to perform Upstream Kinase Analysis (UKA) for tyro
 	* Version 0.3.1: scoreplot Kinase name colors fixed
 * Version 0.4.0: uses UKA db 2024 (contains Array Layouts 86312, 86402, 86412, 87102, 87202)
 	* Version 0.4.1: bugfix in UKA db: missing sequences are now included (MK07_212_224, JAK1_1027_1039, DCX_67_79)
-
+	* Version 0.4.2: rename from UKA_app to UKA_shiny app
 
 ##### Details
 
-* Use the Log2 Signals of the 2 groups.
+* Use the Log2 / VSN / Combat corrected signals of the 2 groups.
 
 * Significant peptides should not be pre-selected for input. (Pre-selection should only be based on general QC considerations, e.g. removing peptides with low or absent signals.)
 
